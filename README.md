@@ -1,4 +1,4 @@
-# The TeamName entry to the GENEA Challenge 2022
+# The ReprGesture entry to the GENEA Challenge 2022
 
 Submitted to GENEA Challenge & Workshop of ACM ICMI 2022
 
@@ -8,23 +8,15 @@ Anonymous Authors
 
 ## 2. Videos
 
-### Ground Truth
+### Ablation study
 
-### Proposed
+(GT / ReprGestrue / without Wavlm / without GAN loss / without domain loss / without Repr)
 
-### w/o Wavlm
+### Additional experiments
 
-### w/o CMD
+(GT / ReprGestrue / with diff loss / with text emotion / with diff loss and text emotion)
 
-### w/o differt loss
-
-### w/o text emotion
-
-### w/o GAN loss
-
-### w/o MISA
-
-## w/o CMD w/o differt loss
+However, the results of these experiments did not turn out very well, so they were not mentioned in the final submission of the system and the paper.
 
 ## 3. Code and Pre-trained Model
 
