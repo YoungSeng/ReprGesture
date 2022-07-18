@@ -12,9 +12,13 @@ Anonymous Authors
 
 (GT / ReprGestrue / without Wavlm / without GAN loss / without domain loss / without Repr)
 
+Preview & Download：Ablation_study~3.mp4
+
 ### Additional experiments
 
 (GT / ReprGestrue / with diff loss / with text emotion / with diff loss and text emotion)
+
+Preview & Download：Additional_experiments~5.mp4
 
 However, the results of these experiments did not turn out very well, so they were not mentioned in the final submission of the system and the paper.
 
