@@ -28,9 +28,23 @@ However, the results of these experiments did not turn out very well, so they we
 
 ### 3.1 Data Processing
 
-![image](https://user-images.githubusercontent.com/37477030/180232909-cc325614-95dc-41f3-82cc-bc0cf1de20dc.png)
+<div align=center>
+<img src="https://user-images.githubusercontent.com/37477030/180232909-cc325614-95dc-41f3-82cc-bc0cf1de20dc.png" width="500px">
+</div>
 
-Speaker: We noted that the data in the training, validation, and test sets were extremely unbalanced, so we only used the data of the speaker with identity "1" for training. And we believed that the speech and gesture are trained on the same person’s data, so the gesture behavior would match the speec
+<!---
+![image](https://user-images.githubusercontent.com/37477030/180232909-cc325614-95dc-41f3-82cc-bc0cf1de20dc.png)
+--->
+
+Speaker: We noted that the data in the training, validation, and test sets were extremely unbalanced, so we only used the data of the speaker with identity "1" for training. And we believed that the speech and gesture are trained on the same person’s data, so the gesture behavior would match the speech.
+
+<div align=center>
+<img src="https://user-images.githubusercontent.com/37477030/180236015-11316fe1-025c-4fca-8b6a-a0dbab7e5d51.png" width="300px">
+</div>
+
+<!---
+![screenshot_on_val_2022_v1_000](https://user-images.githubusercontent.com/37477030/180236015-11316fe1-025c-4fca-8b6a-a0dbab7e5d51.png)
+--->
 
 Gestrue: We considered that the quality of the motion-capture of the hand is poor, so we only used 18 joints corresponding to the upper body without hands and finger.
 
