@@ -1,0 +1,5 @@
+# GENEA Challenge 2022 visualisations
+
+This subfolder contains code that can be used to visualise BVH files (recorded or generated motion) for the GENEA Challenge 2022. There are two separate visualisations:
+* One simple skeleton (stick figure) visualisation is provided in the [simple_skeleton_visualization](https://github.com/genea-workshop/genea_challenge_2022/tree/main/visualizations/simple_skeleton_visualization) folder. This is quick to use and should be easier to set up, but does not look very good. It is mostly intended as a backup solution.
+* One visualisation with a textured 3D character, rendered using [Blender](https://www.blender.org/). This is more complex and slower to run, but looks more realistic and is better for interpreting the motion. You can find the first version of this visualiser in this [minimal release](https://github.com/TeoNikolov/genea_visualizer/releases/tag/minimal-release), but it will be tweaked slightly before it is final. A Dockerised version of the visualizer will be provided soon. **The GENEA Challenge evaluation will be based on this visualisation pipeline.**
