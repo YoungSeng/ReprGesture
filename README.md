@@ -14,7 +14,7 @@ This paper describes the ReprGesture entry to the Generation and Evaluation of N
 
 (GT / ReprGestrue / without Wavlm / without GAN loss / without domain loss / without Repr)
 
-Please Click & Download：Ablation_study~3.mp4
+Please Click & Download：https://github.com/YoungSeng/ICMI2022/Ablation_study~3.mp4
 
 ### 2.2 Additional experiments
 
