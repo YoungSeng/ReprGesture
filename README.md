@@ -2,8 +2,6 @@
 
 Submitted to GENEA Challenge & Workshop of ACM ICMI 2022
 
-Anonymous Authors
-
 ## 1. Abstract
 
 This paper describes the ReprGesture entry to the Generation and Evaluation of Non-verbal Behaviour for Embodied Agents (GENEA) challenge 2022. The GENEA challenge provides the processed datasets and performs crowdsourced evaluations to compare the performance of different gesture generation systems. In this paper, we explore an automatic gesture generation system based on multimodal representation learning. We use WavLM features for audio, FastText features for text and position and rotation matrix features for gesture. Each modality is projected to two distinct subspaces: modality-invariant and modality-specific. To learn inter modality-invariant commonalities and capture the characters of modality-specific representations, gradient reversal layer based adversarial classifier and modality reconstruction decoders are used during training. The gesture decoder generates proper gestures using all representations and features related to the rhythm in the audio.
@@ -14,19 +12,24 @@ This paper describes the ReprGesture entry to the Generation and Evaluation of N
 
 (GT / ReprGestrue / without Wavlm / without GAN loss / without domain loss / without Repr)
 
-Please Click & Download：https://github.com/YoungSeng/ICMI2022/Ablation_study~3.mp4
+Please Click & Download：https://github.com/YoungSeng/ICMI2022/blob/main/Ablation_study~3.mp4
 
 ### 2.2 Additional experiments
 
 (GT / ReprGestrue / with diff loss / with text emotion / with diff loss and text emotion)
 
-Please Click & Download：Additional_experiments~5.mp4
+Please Click & Download：https://github.com/YoungSeng/ICMI2022/blob/main/Additional_experiments~5.mp4
 
 However, the results of these experiments did not turn out very well, so they were not mentioned in the final submission of the system or the paper.
 
-## 3. Code and Pre-trained Model
+### 2.3 Additional ablation study
 
-### 3.1 Data Processing
+More time to talk than to listen. (GT / ReprGestrue / without Wavlm / without GAN loss / without reconstruction loss / without domain loss / without Repr)
+
+Please Click & Download：https://github.com/YoungSeng/ICMI2022/blob/main/Ablation_study~new.mp4
+
+
+## 3. Data Processing
 
 The distribution of speaker IDs:
 
@@ -50,12 +53,55 @@ We noted that the data in the training, validation and test sets were extremely 
 
 Due to the poor quality of hand motion-capture, we only used 18 joints corresponding to the upper body without hands or fingers.
 
-### 3.2 Code
+## 4. Code
 
-The code will be uploaded later.
+### 4.1 Dependencies
 
-### 3.2 Pre-trained Model
+Our environment is similar to [Trimodal](https://github.com/ai4r/Gesture-Generation-from-Trimodal-Context).
 
-The pre-trained model will be uploaded later.
+Download the pre-trained model WavLM Large from [here](https://github.com/microsoft/unilm/tree/master/wavlm).
 
-(_Double-anonymous Page For ICMI 2022 GENEA challenge_)
+### 4.2 Quick Start
+
+Download pre-trained model from [here](https://cloud.tsinghua.edu.cn/f/e1626f6609ef42a4a8f8/?dl=1).
+
+Then `cd Tri/scripts` and modify save path in `synthesize.py`, run
+
+```
+python synthesize.py --ckpt_path <"..your path/multimodal_context_checkpoint_080.bin"> --transcript_path "<..your path/GENEA/genea_challenge_2022/dataset/v1_18/val/tsv/val_2022_v1_000.tsv>" --wav_path "<..your path/GENEA/genea_challenge_2022/dataset/v1_18/val/wav/val_2022_v1_000.wav>"
+```
+
+You will get the converted gestrue `.bvh`.
+
+### 4.3 Data Preparation
+
+Our data from [GENEA challenge 2022](https://genea-workshop.github.io/2022/challenge/) contains folders for wav, tsv and bvh, the original data is from [Talking With Hands 16.2M](https://doi.org/10.1109/ICCV.2019.00085). You can refer to the challenge paper.
+> Youngwoo Yoon, Pieter Wolfert, Taras Kucherenko, Carla Viegas, Teodor Nikolov, Mihail Tsakov, and Gustav Eje Henter. 2022. The GENEA
+Challenge 2022: A large evaluation of data-driven co-speech gesture generation. In Proceedings of the ACM International Conference on Multimodal
+Interaction (ICMI ’22). ACM.
+
+Then `cd My/scripts` and modify path in `twh_dataset_to_lmdb.py`, run
+```
+python twh_dataset_to_lmdb.py <..your path/GENEA/genea_challenge_2022/dataset/v1_18_1/>
+```
+
+### 4.4 Training and Inference
+
+Then `cd Tri/scripts` and modify path in `train.py` and modify `<path = "...your path/wavlm_cache/WavLM-Large.pt">` in `multimodal_context_net.py`, run
+```
+python train.py --config=<..your path/Tri/config/multimodal_context.yml>
+```
+
+For inference, run
+
+```
+python synthesize.py --ckpt_path <"..your path/your saved model.bin"> --transcript_path "...your path/dataset/v1_18/val/tsv/val_2022_v1_000.tsv" --wav_path "...your path/dataset/v1_18/val/wav/val_2022_v1_000.wav"
+```
+
+### 4.5 Evaluation
+
+Our code is adapted from [here](https://github.com/genea-workshop/genea_numerical_evaluations).
+You may refer to `./visualizations/genea_numerical_evaluations_1`.
+
+An AutoEncoder model we trained on data from GENEA can be downloaded from [here](https://cloud.tsinghua.edu.cn/f/5aabcd8c79f84dc19d31/?dl=1) and used to calculate the FGD.
+
