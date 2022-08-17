@@ -105,3 +105,16 @@ You may refer to `./visualizations/genea_numerical_evaluations_1`.
 
 An AutoEncoder model we trained on data from GENEA can be downloaded from [here](https://cloud.tsinghua.edu.cn/f/5aabcd8c79f84dc19d31/?dl=1) and used to calculate the FGD.
 
+## 5.Visualization
+
+For visualization of output, you can use ./visualizations/simple_skeleton_visualization/:
+
+https://user-images.githubusercontent.com/37477030/185100890-667a62e0-cabb-4c73-803c-56a4790dbea9.mp4
+
+Or using ./visualizations/genea_visualizer/celery-queue/blender_render.py based on [here](https://github.com/TeoNikolov/genea_visualizer):
+
+https://user-images.githubusercontent.com/37477030/185101112-83a2bd6d-a204-4e49-9291-601ddab5a342.mp4
+
+```
+"C:\Program Files\Blender Foundation\Blender 2.93\blender.exe" -b --python blender_render.py -- -i "D:\My\Middle\Tri\multimodal_context_40_generated.bvh" -a "C:\Users\Wolf\Documents\NN_Output\audio.wav" -v -o "D:\My\Middle\video" -m "upper_body" --duration 40 -r cw
+```
