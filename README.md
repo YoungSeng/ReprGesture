@@ -116,5 +116,5 @@ Or using ./visualizations/genea_visualizer/celery-queue/blender_render.py based 
 https://user-images.githubusercontent.com/37477030/185101112-83a2bd6d-a204-4e49-9291-601ddab5a342.mp4
 
 ```
-"C:\Program Files\Blender Foundation\Blender 2.93\blender.exe" -b --python blender_render.py -- -i "D:\My\Middle\Tri\multimodal_context_40_generated.bvh" -a "C:\Users\Wolf\Documents\NN_Output\audio.wav" -v -o "D:\My\Middle\video" -m "upper_body" --duration 40 -r cw
+"... your path\Blender Foundation\Blender 2.93\blender.exe" -b --python blender_render.py -- -i "... your path\multimodal_context_40_generated.bvh" -a "... your path\audio.wav" -v -o "... your path\video" -m "upper_body" --duration 40 -r cw
 ```
