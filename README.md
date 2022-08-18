@@ -10,7 +10,7 @@ This paper describes the ReprGesture entry to the Generation and Evaluation of N
 
 ### 2.1 Ablation study
 
-(GT / ReprGestrue / without Wavlm / without GAN loss / without domain loss / without Repr)
+Ground Truth (GT) / ReprGestrue / without Wavlm / without GAN loss / without domain loss / without Repr
 
 https://user-images.githubusercontent.com/37477030/185280500-77a99aef-3c3f-4a2f-bbf1-92acf7dd395c.mp4
 <!---
@@ -18,7 +18,7 @@ Please Click & Download：https://github.com/YoungSeng/ICMI2022/blob/main/Ablati
 -->
 ### 2.2 Additional experiments
 
-(GT / ReprGestrue / with diff loss / with text emotion / with diff loss and text emotion)
+Ground Truth (GT) / ReprGestrue / with diff loss / with text emotion / with diff loss and text emotion
 
 https://user-images.githubusercontent.com/37477030/185280702-eb5e35bb-cde9-4d4c-8f95-e25460c00334.mp4
 <!---
@@ -28,7 +28,9 @@ However, the results of these experiments did not turn out very well, so they we
 
 ### 2.3 Additional ablation study
 
-More time to talk than to listen. (GT / ReprGestrue / without Wavlm / without GAN loss / without reconstruction loss / without domain loss / without Repr)
+More time to talk than to listen. 
+
+Ground Truth (GT) / ReprGestrue / without Wavlm / without GAN loss / without reconstruction loss / without domain loss / without Repr
 
 https://user-images.githubusercontent.com/37477030/185283158-86a9a244-f447-4ee4-9aac-64cea5e79567.mp4
 
