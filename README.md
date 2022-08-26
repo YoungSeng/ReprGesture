@@ -127,3 +127,17 @@ https://user-images.githubusercontent.com/37477030/185101112-83a2bd6d-a204-4e49-
 ```
 "... your path\Blender Foundation\Blender 2.93\blender.exe" -b --python blender_render.py -- -i "... your path\multimodal_context_40_generated.bvh" -a "... your path\audio.wav" -v -o "... your path\video" -m "upper_body" --duration 40 -r cw
 ```
+## 6. Citation
+
+If you find our work useful in your research, please consider citing:
+
+```
+@inproceedings{yang2022genea,
+  author={Sicheng Yang, Zhiyong Wu, Minglei Li, Mengchen Zhao, Jiuxin Lin, Liyang Chen, Weihong Bao},
+  title={The ReprGesture entry to the GENEA Challenge 2022},
+  booktitle = {Proceedings of the ACM International Conference on Multimodal Interaction},
+  publisher = {ACM},
+  series = {ICMI '22},
+  year={2022}
+}
+```
