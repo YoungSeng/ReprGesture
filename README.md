@@ -1,6 +1,10 @@
 # The ReprGesture entry to the GENEA Challenge 2022
 
-Submitted to GENEA Challenge & Workshop of ACM ICMI 2022
+### [Paper](https://arxiv.org/abs/2208.12133)
+
+<div align=center>
+<img src="overview.png" width="900px">
+</div>
 
 ## 1. Abstract
 
