@@ -131,7 +131,24 @@ https://user-images.githubusercontent.com/37477030/185101112-83a2bd6d-a204-4e49-
 ```
 "... your path\Blender Foundation\Blender 2.93\blender.exe" -b --python blender_render.py -- -i "... your path\multimodal_context_40_generated.bvh" -a "... your path\audio.wav" -v -o "... your path\video" -m "upper_body" --duration 40 -r cw
 ```
-## 6. Citation
+
+## 6. Acknowledgement and References
+
+This work is supported by Shenzhen Science and Technology Innovation Committee (WDZC20200818121348001), National Natural Science Foundation of China (62076144) and Shenzhen Key Laboratory of next generation interactive media innovative technology (ZDSYS20210623092001004).
+
+Our work mainly inspired by:
+
+(1) [Gesture Generation from Trimodal Context](https://github.com/ai4r/Gesture-Generation-from-Trimodal-Context)
+
+> Youngwoo Yoon, Bok Cha, Joo-Haeng Lee, Minsu Jang, Jaeyeon Lee, Jaehong Kim, and Geehyuk Lee. 2020. Speech gesture generation from the trimodal context of text, audio, and speaker identity. ACM Trans. Graph. 39, 6, Article 222 (December 2020), 16 pages. https://doi.org/10.1145/3414685.3417838
+
+
+(2) [MISA: Modality-Invariant and -Specific Representations for Multimodal Sentiment Analysis](https://github.com/declare-lab/multimodal-deep-learning/tree/main/MISA)
+
+
+> Devamanyu Hazarika, Roger Zimmermann, and Soujanya Poria. 2020. MISA: Modality-Invariant and -Specific Representations for Multimodal Sentiment Analysis. In Proceedings of the 28th ACM International Conference on Multimedia (MM '20). Association for Computing Machinery, New York, NY, USA, 1122–1131. https://doi.org/10.1145/3394171.3413678
+
+## 7. Citation
 
 If you find our work useful in your research, please consider citing:
 
