@@ -88,7 +88,7 @@ You will get the converted gestrue `.bvh`.
 
 ### 4.3 Data Preparation
 
-Our data from [GENEA challenge 2022](https://genea-workshop.github.io/2022/challenge/) contains folders for wav, tsv and bvh, the original data is from [Talking With Hands 16.2M](https://doi.org/10.1109/ICCV.2019.00085). You can refer to the challenge paper.
+Our data from [GENEA challenge 2022](https://genea-workshop.github.io/2022/challenge/) contains folders for wav, tsv and bvh, the original data is from [Talking With Hands 16.2M](https://doi.org/10.1109/ICCV.2019.00085). You can refer to the challenge paper and download from [here](https://youngwoo-yoon.github.io/GENEAchallenge2022/).
 > Youngwoo Yoon, Pieter Wolfert, Taras Kucherenko, Carla Viegas, Teodor Nikolov, Mihail Tsakov, and Gustav Eje Henter. 2022. The GENEA
 Challenge 2022: A large evaluation of data-driven co-speech gesture generation. In Proceedings of the ACM International Conference on Multimodal
 Interaction (ICMI ’22). ACM.
