@@ -1,6 +1,6 @@
 # The ReprGesture entry to the GENEA Challenge 2022
 
-### [Paper](https://arxiv.org/abs/2208.12133)
+### [Conference archive](https://dl.acm.org/doi/10.1145/3536221.3558066) | [arXiv](https://arxiv.org/abs/2208.12133)
 
 <div align=center>
 <img src="overview.png" width="900px">
